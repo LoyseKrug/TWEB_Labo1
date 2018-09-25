@@ -1,133 +1,118 @@
 body {
   background-color: #ea8981;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   background-color: white;
 
+  /*La taille est en absolu, car on ne veut pas que la moindre changement de la taille 
+  de la page fasse varier les tailles de tous les éléments*/
   width: 500px;
   height: 250px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  
 
-  position: absolute;
-  left: 50%;
-  top: 25%;
+  position :absolute;
+  left:50%;
+  top: 50%;
   transform: translateX(-50%) translateY(-50%);
 
-  padding: 20px;
 
+  border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  font-family: 'Roboto', sans-serif;
 }
 
-.pictureAndButton{
-  display:flex;
+.leftPanel{
+  display: flex;
   flex-direction: column;
-  justify-content: space-around;
+
+  /*La taille est donnée en % pour que les proportions restent toujours
+  les mêmes. Cela n'aura pas d'impact si la fenêtre 
+  principale garde toujours la même taille*/
   width: 30%;
   height: 100%;
 }
 
-.button{
-
-  background-color: #59c9a5;
-  font-size: 25px;
-  color: #FFF;
-  height: 50px;
-  border:none;
-  border-radius: 10px;
-}
-
-.general-info{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  width: 60%;
-  height: 100%;
-}
-
-.undertitle{
-  position:relative;
-  ;
+.pic{
+  position: relative;
   width: 100%;
-  heigth:10%;
+  height: 70%;
 }
 
-.title{
-  position:relative;
-  width: 100%;
-  heigth:10%;
-}
+#picture{
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
 
-.info{
-  position:relative;
-  width: 100%;
-  heigth:50%;
-}
-
-#james {
-  display: flex;
   width: 150px;
   height: 150px;
 
   border-radius: 10%;
   border: 1px solid #888;
-/*
-  left: 5%;
-  top: 25%;
-  transform: translateX(0%) translateY(-25%);
-  */
 }
 
-.user-stat {
+.button{
+  position: relative;
+  width: 100%;
+  height: 30%;
+ 
+}
+
+.followButton{
+  position: relative;
+  background-color: #59c9a5;
+  font-size: 20px;
+  color: #FFF;
+
+  width:150px;
+  height: 50px;
+  border:none;
+  border-radius: 10px;
+}
+
+.rightPanel{
+  display: flex;
+  flex-direction: column; 
+
+  width: 70%;
+  height: 100%;
+  padding-left: 5%;
+}
+
+.title{
+  position: relative;
+  width: 100%;
+  height: 15%
+}
+
+#Name {
+  margin: 0;
+}
+
+.undertitle{
+  position: relative;
+  width: 100%;
+  height: 10%
+}
+
+.description{
+  position: relative;
+  width: 100%;
+  height: 45%
+}
+
+.stats{
+  position:relative;
+
+  width:100%;
+  height: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  width: 100%;
-  height: 30%;
-
-  padding: 20px 0;
-}
-
-.user-information div {
-  width: calc(100% / 3);
-}
-
-.details {
-  color: #888;
-}
-
-.add-button {
-  background-color: #e25f5f;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-
-  border: 0;
-
-  font-size: 25px;
-  width: 50px;
-  height: 50px;
-
-  border-radius: 50%;
-
-  position: absolute;
-
-  top: 170px;
-  right: 110px;
-
-  transition: width 300ms, height 300ms, right 300ms, top 300ms, font-size 300ms;
-}
-
-.add-button:hover {
-  font-size: 30px;
-  width: 60px;
-  height: 60px;
-  top: 165px;
-  right: 105px;
+  
 }

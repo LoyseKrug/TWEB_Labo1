@@ -2,50 +2,63 @@
 <html>
 
 <head>
-    <title>TWEB Example</title>
+    <title>TWEB_Labo1_LoyseKrug</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
-<div class="main">
-    <div class="pictureAndButton">
-        <img src="images/user.png" alt="user" id="james"/>
-        <button class="button" onclick="loveMe()">Follow</button>
+    <!-- Contient les infos sur la fenêtre principale-->
+    <div class="main">
+        <div class="leftPanel">
+            <div class="pic">
+                <img src="images/Squid.png" alt="user" id="picture" />
+            </div>
+
+            <div class="button">
+                <button class="followButton">Follow</button>
+            </div>
+            
+            
+        </div>
+
+        <div class="rightPanel">
+            <div class="title">
+                <h2 id="Name">Squid</h2>
+            </div>
+
+            <div class="undertitle">
+                <strong>The best swimmer</strong>
+            </div>
+
+            <div class="description">
+                <p>
+                    In the deepest sea it's dangerous to swim carelessly. But nothing can frighten our squid. He swims, swims and swims wherever he wants!
+                </p>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <strong>789</strong><br />
+                    <span class="details">posts</span>
+                </div>
+                <div>
+                    <strong class="nbFollowers">1000</strong><br />
+                    <span class="details">followers</span>
+                </div>
+                <div>
+                    <strong>1k</strong><br />
+                    <span class="details">following</span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="general-info">
-        <div class="title">
-            <h2>Humansoftny</h2>
-        </div>
-        <div class="undertitle">
-            <b>Humans of New York</b>
-        </div>
-        <div class="description">
-            <p>
-                bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            </p>
-        </div>
 
-        <div class="user-stat">
-            <div>
-                <strong>789</strong><br/>
-                <span class="details">posts</span>
-            </div>
-            <div>
-                <strong>2k</strong><br/>
-                <span class="details">followers</span>
-            </div>
-            <div>
-                <strong>1k</strong><br/>
-                <span class="details">following</span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="js/script.js"></script>
-
+    <script src="js/script.js"></script>
+    
 </body>
+
 
 </html>
